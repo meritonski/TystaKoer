@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TystaKöer – Support</title>
+  <meta name="description" content="Support för TystaKöer." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+    header { margin-bottom: 18px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p { line-height: 1.55; }
+    .card { border: 1px solid rgba(120,120,120,.25); border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .muted { opacity: .75; }
+    a { color: inherit; }
+    footer { margin-top: 26px; font-size: 13px; opacity: .75; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>TystaKöer – Support</h1>
+      <p class="muted">Hjälp och kontakt för appen TystaKöer.</p>
+    </header>
+
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>
+        E-post: <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>
+      </p>
+      <p class="muted">
+        Svara gärna med: iPhone-modell, iOS-version och vad som hände precis innan felet.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Vanliga frågor</h2>
+
+      <h3>Varför står det “Ingen rapport”?</h3>
+      <p>
+        Det betyder att platsen inte har någon nylig rapport i systemet (eller att tidigare rapporter har blivit för gamla).
+      </p>
+
+      <h3>Varför kan jag inte rapportera?</h3>
+      <p>
+        För att minska felrapporter måste du vara nära platsen för att rapportera (geofence).
+      </p>
+
+      <h3>Jag ser en färg i kartan men detaljrutan visar något annat</h3>
+      <p>
+        Vid zoom kan kluster-pinnar visa en sammanfattning av flera platser. När du zoomar in visas varje plats individuellt.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Länkar</h2>
+      <p>
+        <a href="./privacy.html">Integritetspolicy (Privacy Policy)</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>© <span id="y"></span> TystaKöer</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
