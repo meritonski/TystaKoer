@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support – TystaKöer</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <a class="back" href="./index.html">← Tillbaka</a>
+      <h1>Support</h1>
+      <p class="muted">Hjälp, feedback och felrapportering</p>
+    </header>
+
+    <section class="content">
+      <h2>Kontakta oss</h2>
+      <p>
+        Skicka gärna med:
+      </p>
+      <ul>
+        <li>Vilken plats det gäller</li>
+        <li>Ungefärlig tid</li>
+        <li>Skärmdump om möjligt</li>
+        <li>iPhone-modell + iOS-version</li>
+      </ul>
+
+      <h3>E-post</h3>
+      <p>
+        <a class="btn" href="mailto:support@dindomän.se?subject=TystaKöer%20Support">support@dindomän.se</a>
+      </p>
+
+      <h2>Vanliga frågor</h2>
+      <h3>Varför blir köstatus “grå” efter ett tag?</h3>
+      <p>
+        För att undvika att gammal information ser “ny” ut. När en rapport blir för gammal sänks tillförlitligheten och kan visas som grå.
+      </p>
+
+      <h3>Jag kan inte rapportera</h3>
+      <p>
+        Rapportering kräver att du är nära platsen (t.ex. inom 500 m) och kan ha en kort cooldown mellan rapporter.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> TystaKöer</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
