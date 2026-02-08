@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integritetspolicy – TystaKöer</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <a class="back" href="./index.html">← Tillbaka</a>
+      <h1>Integritetspolicy</h1>
+      <p class="muted">Senast uppdaterad: 2026-02-08</p>
+    </header>
+
+    <section class="content">
+      <h2>Sammanfattning</h2>
+      <p>
+        TystaKöer visar uppskattad köstatus för platser. Vi samlar in minsta möjliga data för att appen ska fungera.
+      </p>
+
+      <h2>Data vi kan behandla</h2>
+      <ul>
+        <li><strong>Platsdata (valfritt):</strong> Om du tillåter plats används den för att visa platser i närheten och för att verifiera att du är på plats vid rapportering (t.ex. inom 500 m).</li>
+        <li><strong>Rapportdata:</strong> När du rapporterar skickas platsens id, vald kö-nivå och tidsstämpel.</li>
+        <li><strong>Enhetsidentifierare (pseudonym):</strong> En hashad identifierare kan användas för att motverka spam och införa cooldown mellan rapporter.</li>
+      </ul>
+
+      <h2>Hur vi använder data</h2>
+      <ul>
+        <li>Visa köstatus och senaste uppdatering för platser.</li>
+        <li>Verifiera närhet vid rapportering (anti-missbruk).</li>
+        <li>Förbättra tillförlitlighet genom att motverka repetitiva/spam-rapporteringar.</li>
+      </ul>
+
+      <h2>Delning</h2>
+      <p>
+        Vi säljer inte dina personuppgifter. Data kan behandlas av vår backend-leverantör (t.ex. databas/API) för att appen ska fungera.
+      </p>
+
+      <h2>Lagringstid</h2>
+      <p>
+        Rapporter lagras för att kunna visa köstatus. Platsdata används i första hand i realtid och lagras inte som rå GPS-historik i appen.
+      </p>
+
+      <h2>Dina val</h2>
+      <ul>
+        <li>Du kan stänga av platsåtkomst i iOS-inställningar.</li>
+        <li>Du kan sluta rapportera när som helst.</li>
+      </ul>
+
+      <h2>Kontakt</h2>
+      <p>
+        För frågor om integritet, kontakta oss via support-sidan.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> TystaKöer</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
