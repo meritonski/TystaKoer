@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TystaKöer – Integritetspolicy</title>
+  <meta name="description" content="Integritetspolicy för TystaKöer." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+    header { margin-bottom: 18px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p, li { line-height: 1.55; }
+    .card { border: 1px solid rgba(120,120,120,.25); border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .muted { opacity: .75; }
+    a { color: inherit; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Integritetspolicy – TystaKöer</h1>
+      <p class="muted">Senast uppdaterad: <strong>2026-02-08</strong></p>
+    </header>
+
+    <div class="card">
+      <h2>Sammanfattning</h2>
+      <p>
+        TystaKöer låter användare se och rapportera köstatus för platser. Vi samlar in minsta möjliga data för att kunna
+        verifiera rapporter och förbättra tjänsten.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Vilken information vi kan behandla</h2>
+      <ul>
+        <li><strong>Platsdata (om du tillåter):</strong> används för att visa närliggande platser och för att verifiera att rapporter görs nära platsen.</li>
+        <li><strong>Rapportdata:</strong> vald kö-nivå (t.ex. 0–5 min) och tidpunkt för rapporten.</li>
+        <li><strong>Enhetsidentifierare (anonym):</strong> en slumpmässig hash lagrad lokalt (t.ex. i nyckelring) som används för att minska missbruk och införa cooldown på rapportering.</li>
+        <li><strong>Teknisk information:</strong> felmeddelanden och diagnostik kan förekomma i loggar på din enhet. Vi ber dig ibland inkludera sådan info när du kontaktar support.</li>
+      </ul>
+      <p class="muted">
+        Vi samlar inte in namn, e-post eller annan direkt personidentifierande information om du inte själv skickar det till support.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Hur vi använder informationen</h2>
+      <ul>
+        <li>Visa platser och köstatus i appen.</li>
+        <li>Verifiera att rapporter görs nära den plats som rapporteras.</li>
+        <li>Motverka spam/missbruk (t.ex. cooldown per enhet).</li>
+        <li>Felsökning och förbättring av tjänsten.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Lagring och delning</h2>
+      <p>
+        Rapportdata och nödvändiga tekniska fält kan lagras i vår databas (t.ex. Supabase/PostgreSQL).
+        Vi säljer inte dina uppgifter.
+      </p>
+      <p>
+        Vi delar endast data när det krävs för att drifta tjänsten (t.ex. hosting/databasleverantör) eller om vi måste enligt lag.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Platsbehörighet</h2>
+      <p>
+        Du kan använda appen utan att rapportera. För att rapportera kan appen kräva att du tillåter platsåtkomst så att rapporten kan verifieras.
+        Du kan ändra detta när som helst i iOS-inställningar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Hur länge vi sparar data</h2>
+      <p>
+        Rapportdata kan sparas så länge det behövs för att kunna visa historik och beräkna aktuell köstatus.
+        Äldre rapporter kan fasas ut eller få lägre vikt i beräkningar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Dina val och rättigheter</h2>
+      <ul>
+        <li>Du kan stänga av platsbehörighet i iOS-inställningar.</li>
+        <li>Du kan kontakta oss för frågor eller för att begära borttagning av rapportdata kopplad till din enhets-hash (om möjligt att matcha).</li>
+      </ul>
+      <p>
+        Kontakt: <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Ändringar</h2>
+      <p>
+        Vi kan uppdatera denna policy. Vid större ändringar uppdaterar vi datumet högst upp på sidan.
+      </p>
+    </div>
+
+    <div class="card">
+      <p><a href="./index.html">← Till Support</a></p>
+    </div>
+  </div>
+</body>
+</html>
