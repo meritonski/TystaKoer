@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TystaKöer – Länkar</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>TystaKöer</h1>
+      <p class="muted">Länkar</p>
+    </header>
+
+    <section class="links">
+      <a class="btn" href="./privacy.html">Integritetspolicy (Privacy Policy)</a>
+      <a class="btn" href="./support.html">Support</a>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> TystaKöer</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
